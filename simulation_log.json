@@ -1,0 +1,2958 @@
+{
+  "config": {
+    "grid": "4x8",
+    "total_slots": 32,
+    "simulation_steps": 150,
+    "target_vehicles": 220,
+    "park_duration": "8-35",
+    "peak_steps": "35 steps",
+    "entrances": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        7
+      ]
+    ],
+    "exit": [
+      3,
+      7
+    ],
+    "queue_reject_th": 28,
+    "no_show_prob": 0.04,
+    "base_weights": {
+      "w1": 5.0,
+      "w2": 3.0,
+      "w3": 2.0,
+      "w4": 1.5,
+      "w5": 1.0,
+      "w6": 2.5,
+      "w7": 1.2,
+      "w8": 0.8
+    }
+  },
+  "proposed": {
+    "system": "Proposed",
+    "total": 220,
+    "assigned_count": 120,
+    "rejected_count": 100,
+    "avg_wait": 2.09,
+    "max_wait": 7,
+    "jain_fairness": 0.4777,
+    "rejection_rate": 0.4545,
+    "utilization": 0.0,
+    "peak_queue": 16,
+    "type_avg_wait": {
+      "EMERGENCY": 0.0,
+      "VIP": 0.71,
+      "NORMAL": 2.52
+    },
+    "type_reject_rate": {
+      "EMERGENCY": 0.3333,
+      "VIP": 0.5405,
+      "NORMAL": 0.4444
+    },
+    "step_metrics": [
+      {
+        "step": 0,
+        "utilization": 0.094,
+        "queue": 0,
+        "in_lot": 2,
+        "assigned_total": 2,
+        "rejected_total": 0,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.97,
+        "w3": 1.978
+      },
+      {
+        "step": 1,
+        "utilization": 0.219,
+        "queue": 0,
+        "in_lot": 5,
+        "assigned_total": 5,
+        "rejected_total": 0,
+        "congestion": 0.094,
+        "is_peak": 0,
+        "w2": 2.94,
+        "w3": 1.955
+      },
+      {
+        "step": 2,
+        "utilization": 0.312,
+        "queue": 0,
+        "in_lot": 8,
+        "assigned_total": 8,
+        "rejected_total": 0,
+        "congestion": 0.219,
+        "is_peak": 0,
+        "w2": 2.91,
+        "w3": 1.933
+      },
+      {
+        "step": 3,
+        "utilization": 0.406,
+        "queue": 1,
+        "in_lot": 11,
+        "assigned_total": 11,
+        "rejected_total": 1,
+        "congestion": 0.312,
+        "is_peak": 0,
+        "w2": 2.88,
+        "w3": 1.91
+      },
+      {
+        "step": 4,
+        "utilization": 0.5,
+        "queue": 1,
+        "in_lot": 14,
+        "assigned_total": 14,
+        "rejected_total": 1,
+        "congestion": 0.406,
+        "is_peak": 0,
+        "w2": 2.85,
+        "w3": 1.97
+      },
+      {
+        "step": 5,
+        "utilization": 0.594,
+        "queue": 0,
+        "in_lot": 17,
+        "assigned_total": 17,
+        "rejected_total": 1,
+        "congestion": 0.5,
+        "is_peak": 0,
+        "w2": 2.82,
+        "w3": 1.948
+      },
+      {
+        "step": 6,
+        "utilization": 0.688,
+        "queue": 1,
+        "in_lot": 20,
+        "assigned_total": 20,
+        "rejected_total": 1,
+        "congestion": 0.594,
+        "is_peak": 0,
+        "w2": 2.79,
+        "w3": 1.925
+      },
+      {
+        "step": 7,
+        "utilization": 0.781,
+        "queue": 2,
+        "in_lot": 23,
+        "assigned_total": 23,
+        "rejected_total": 1,
+        "congestion": 0.688,
+        "is_peak": 0,
+        "w2": 2.76,
+        "w3": 1.903
+      },
+      {
+        "step": 8,
+        "utilization": 0.844,
+        "queue": 0,
+        "in_lot": 25,
+        "assigned_total": 25,
+        "rejected_total": 1,
+        "congestion": 0.781,
+        "is_peak": 0,
+        "w2": 2.73,
+        "w3": 1.88
+      },
+      {
+        "step": 9,
+        "utilization": 0.875,
+        "queue": 0,
+        "in_lot": 26,
+        "assigned_total": 26,
+        "rejected_total": 1,
+        "congestion": 0.844,
+        "is_peak": 0,
+        "w2": 2.7,
+        "w3": 1.858
+      },
+      {
+        "step": 10,
+        "utilization": 0.875,
+        "queue": 0,
+        "in_lot": 27,
+        "assigned_total": 28,
+        "rejected_total": 1,
+        "congestion": 0.812,
+        "is_peak": 0,
+        "w2": 2.67,
+        "w3": 1.835
+      },
+      {
+        "step": 11,
+        "utilization": 0.969,
+        "queue": 1,
+        "in_lot": 30,
+        "assigned_total": 31,
+        "rejected_total": 1,
+        "congestion": 0.875,
+        "is_peak": 0,
+        "w2": 2.64,
+        "w3": 1.813
+      },
+      {
+        "step": 12,
+        "utilization": 0.969,
+        "queue": 1,
+        "in_lot": 31,
+        "assigned_total": 34,
+        "rejected_total": 1,
+        "congestion": 0.875,
+        "is_peak": 0,
+        "w2": 2.61,
+        "w3": 1.79
+      },
+      {
+        "step": 13,
+        "utilization": 1.0,
+        "queue": 1,
+        "in_lot": 32,
+        "assigned_total": 36,
+        "rejected_total": 2,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 2.58,
+        "w3": 1.768
+      },
+      {
+        "step": 14,
+        "utilization": 1.0,
+        "queue": 3,
+        "in_lot": 32,
+        "assigned_total": 36,
+        "rejected_total": 5,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 2.55,
+        "w3": 1.745
+      },
+      {
+        "step": 15,
+        "utilization": 1.0,
+        "queue": 1,
+        "in_lot": 32,
+        "assigned_total": 37,
+        "rejected_total": 7,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 2.52,
+        "w3": 1.805
+      },
+      {
+        "step": 16,
+        "utilization": 1.0,
+        "queue": 0,
+        "in_lot": 32,
+        "assigned_total": 38,
+        "rejected_total": 8,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 2.49,
+        "w3": 1.865
+      },
+      {
+        "step": 17,
+        "utilization": 1.0,
+        "queue": 0,
+        "in_lot": 32,
+        "assigned_total": 39,
+        "rejected_total": 10,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 2.46,
+        "w3": 1.925
+      },
+      {
+        "step": 18,
+        "utilization": 1.0,
+        "queue": 0,
+        "in_lot": 32,
+        "assigned_total": 41,
+        "rejected_total": 10,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 2.43,
+        "w3": 1.985
+      },
+      {
+        "step": 19,
+        "utilization": 1.0,
+        "queue": 0,
+        "in_lot": 32,
+        "assigned_total": 41,
+        "rejected_total": 13,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 2.045
+      },
+      {
+        "step": 20,
+        "utilization": 1.0,
+        "queue": 1,
+        "in_lot": 32,
+        "assigned_total": 44,
+        "rejected_total": 13,
+        "congestion": 1.206,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.105
+      },
+      {
+        "step": 21,
+        "utilization": 1.0,
+        "queue": 2,
+        "in_lot": 32,
+        "assigned_total": 47,
+        "rejected_total": 13,
+        "congestion": 1.206,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.165
+      },
+      {
+        "step": 22,
+        "utilization": 1.0,
+        "queue": 3,
+        "in_lot": 32,
+        "assigned_total": 48,
+        "rejected_total": 15,
+        "congestion": 1.269,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.143
+      },
+      {
+        "step": 23,
+        "utilization": 1.0,
+        "queue": 1,
+        "in_lot": 32,
+        "assigned_total": 49,
+        "rejected_total": 17,
+        "congestion": 1.269,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.203
+      },
+      {
+        "step": 24,
+        "utilization": 1.0,
+        "queue": 2,
+        "in_lot": 32,
+        "assigned_total": 51,
+        "rejected_total": 18,
+        "congestion": 1.238,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.263
+      },
+      {
+        "step": 25,
+        "utilization": 1.0,
+        "queue": 3,
+        "in_lot": 32,
+        "assigned_total": 51,
+        "rejected_total": 21,
+        "congestion": 1.3,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.323
+      },
+      {
+        "step": 26,
+        "utilization": 0.969,
+        "queue": 4,
+        "in_lot": 31,
+        "assigned_total": 54,
+        "rejected_total": 21,
+        "congestion": 1.175,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.383
+      },
+      {
+        "step": 27,
+        "utilization": 1.0,
+        "queue": 5,
+        "in_lot": 32,
+        "assigned_total": 55,
+        "rejected_total": 23,
+        "congestion": 1.269,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.36
+      },
+      {
+        "step": 28,
+        "utilization": 1.0,
+        "queue": 7,
+        "in_lot": 32,
+        "assigned_total": 57,
+        "rejected_total": 24,
+        "congestion": 1.238,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.338
+      },
+      {
+        "step": 29,
+        "utilization": 1.0,
+        "queue": 8,
+        "in_lot": 32,
+        "assigned_total": 57,
+        "rejected_total": 27,
+        "congestion": 1.3,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.315
+      },
+      {
+        "step": 30,
+        "utilization": 1.0,
+        "queue": 10,
+        "in_lot": 32,
+        "assigned_total": 58,
+        "rejected_total": 29,
+        "congestion": 1.269,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.293
+      },
+      {
+        "step": 31,
+        "utilization": 1.0,
+        "queue": 12,
+        "in_lot": 32,
+        "assigned_total": 58,
+        "rejected_total": 32,
+        "congestion": 1.3,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.27
+      },
+      {
+        "step": 32,
+        "utilization": 1.0,
+        "queue": 13,
+        "in_lot": 32,
+        "assigned_total": 59,
+        "rejected_total": 34,
+        "congestion": 1.269,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.248
+      },
+      {
+        "step": 33,
+        "utilization": 1.0,
+        "queue": 14,
+        "in_lot": 32,
+        "assigned_total": 62,
+        "rejected_total": 34,
+        "congestion": 1.206,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.225
+      },
+      {
+        "step": 34,
+        "utilization": 1.0,
+        "queue": 16,
+        "in_lot": 32,
+        "assigned_total": 64,
+        "rejected_total": 35,
+        "congestion": 1.238,
+        "is_peak": 1,
+        "w2": 2.4,
+        "w3": 2.203
+      },
+      {
+        "step": 35,
+        "utilization": 1.0,
+        "queue": 15,
+        "in_lot": 32,
+        "assigned_total": 64,
+        "rejected_total": 38,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 2.18
+      },
+      {
+        "step": 36,
+        "utilization": 1.0,
+        "queue": 13,
+        "in_lot": 32,
+        "assigned_total": 66,
+        "rejected_total": 39,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 2.158
+      },
+      {
+        "step": 37,
+        "utilization": 1.0,
+        "queue": 13,
+        "in_lot": 32,
+        "assigned_total": 67,
+        "rejected_total": 41,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 2.135
+      },
+      {
+        "step": 38,
+        "utilization": 1.0,
+        "queue": 14,
+        "in_lot": 32,
+        "assigned_total": 67,
+        "rejected_total": 44,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 2.113
+      },
+      {
+        "step": 39,
+        "utilization": 1.0,
+        "queue": 14,
+        "in_lot": 32,
+        "assigned_total": 68,
+        "rejected_total": 46,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 2.09
+      },
+      {
+        "step": 40,
+        "utilization": 1.0,
+        "queue": 16,
+        "in_lot": 32,
+        "assigned_total": 69,
+        "rejected_total": 48,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 2.068
+      },
+      {
+        "step": 41,
+        "utilization": 1.0,
+        "queue": 15,
+        "in_lot": 32,
+        "assigned_total": 71,
+        "rejected_total": 49,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 2.475,
+        "w3": 2.045
+      },
+      {
+        "step": 42,
+        "utilization": 1.0,
+        "queue": 15,
+        "in_lot": 32,
+        "assigned_total": 73,
+        "rejected_total": 50,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 2.55,
+        "w3": 2.023
+      },
+      {
+        "step": 43,
+        "utilization": 0.938,
+        "queue": 13,
+        "in_lot": 30,
+        "assigned_total": 76,
+        "rejected_total": 50,
+        "congestion": 0.844,
+        "is_peak": 0,
+        "w2": 2.625,
+        "w3": 2.0
+      },
+      {
+        "step": 44,
+        "utilization": 1.0,
+        "queue": 12,
+        "in_lot": 32,
+        "assigned_total": 78,
+        "rejected_total": 52,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 2.7,
+        "w3": 1.978
+      },
+      {
+        "step": 45,
+        "utilization": 1.0,
+        "queue": 13,
+        "in_lot": 32,
+        "assigned_total": 81,
+        "rejected_total": 52,
+        "congestion": 0.906,
+        "is_peak": 0,
+        "w2": 2.775,
+        "w3": 1.955
+      },
+      {
+        "step": 46,
+        "utilization": 1.0,
+        "queue": 11,
+        "in_lot": 32,
+        "assigned_total": 83,
+        "rejected_total": 53,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 2.85,
+        "w3": 1.933
+      },
+      {
+        "step": 47,
+        "utilization": 1.0,
+        "queue": 11,
+        "in_lot": 32,
+        "assigned_total": 84,
+        "rejected_total": 55,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 2.925,
+        "w3": 1.91
+      },
+      {
+        "step": 48,
+        "utilization": 1.0,
+        "queue": 10,
+        "in_lot": 32,
+        "assigned_total": 85,
+        "rejected_total": 57,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.0,
+        "w3": 1.888
+      },
+      {
+        "step": 49,
+        "utilization": 1.0,
+        "queue": 10,
+        "in_lot": 32,
+        "assigned_total": 86,
+        "rejected_total": 59,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.075,
+        "w3": 1.865
+      },
+      {
+        "step": 50,
+        "utilization": 0.969,
+        "queue": 8,
+        "in_lot": 31,
+        "assigned_total": 88,
+        "rejected_total": 60,
+        "congestion": 0.906,
+        "is_peak": 0,
+        "w2": 3.15,
+        "w3": 1.843
+      },
+      {
+        "step": 51,
+        "utilization": 1.0,
+        "queue": 8,
+        "in_lot": 32,
+        "assigned_total": 91,
+        "rejected_total": 60,
+        "congestion": 0.906,
+        "is_peak": 0,
+        "w2": 3.225,
+        "w3": 1.82
+      },
+      {
+        "step": 52,
+        "utilization": 1.0,
+        "queue": 9,
+        "in_lot": 32,
+        "assigned_total": 91,
+        "rejected_total": 63,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 3.3,
+        "w3": 1.798
+      },
+      {
+        "step": 53,
+        "utilization": 1.0,
+        "queue": 10,
+        "in_lot": 32,
+        "assigned_total": 93,
+        "rejected_total": 64,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 3.375,
+        "w3": 1.775
+      },
+      {
+        "step": 54,
+        "utilization": 1.0,
+        "queue": 10,
+        "in_lot": 32,
+        "assigned_total": 94,
+        "rejected_total": 66,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.45,
+        "w3": 1.753
+      },
+      {
+        "step": 55,
+        "utilization": 1.0,
+        "queue": 10,
+        "in_lot": 32,
+        "assigned_total": 95,
+        "rejected_total": 68,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.525,
+        "w3": 1.73
+      },
+      {
+        "step": 56,
+        "utilization": 1.0,
+        "queue": 9,
+        "in_lot": 32,
+        "assigned_total": 97,
+        "rejected_total": 69,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 3.495,
+        "w3": 1.708
+      },
+      {
+        "step": 57,
+        "utilization": 1.0,
+        "queue": 10,
+        "in_lot": 32,
+        "assigned_total": 99,
+        "rejected_total": 70,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 3.465,
+        "w3": 1.685
+      },
+      {
+        "step": 58,
+        "utilization": 1.0,
+        "queue": 10,
+        "in_lot": 32,
+        "assigned_total": 99,
+        "rejected_total": 73,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 3.435,
+        "w3": 1.663
+      },
+      {
+        "step": 59,
+        "utilization": 1.0,
+        "queue": 7,
+        "in_lot": 32,
+        "assigned_total": 99,
+        "rejected_total": 76,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 3.405,
+        "w3": 1.64
+      },
+      {
+        "step": 60,
+        "utilization": 1.0,
+        "queue": 6,
+        "in_lot": 32,
+        "assigned_total": 100,
+        "rejected_total": 78,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.375,
+        "w3": 1.618
+      },
+      {
+        "step": 61,
+        "utilization": 1.0,
+        "queue": 6,
+        "in_lot": 32,
+        "assigned_total": 101,
+        "rejected_total": 80,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.345,
+        "w3": 1.6
+      },
+      {
+        "step": 62,
+        "utilization": 1.0,
+        "queue": 8,
+        "in_lot": 32,
+        "assigned_total": 102,
+        "rejected_total": 82,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.315,
+        "w3": 1.6
+      },
+      {
+        "step": 63,
+        "utilization": 1.0,
+        "queue": 7,
+        "in_lot": 32,
+        "assigned_total": 105,
+        "rejected_total": 82,
+        "congestion": 0.906,
+        "is_peak": 0,
+        "w2": 3.285,
+        "w3": 1.6
+      },
+      {
+        "step": 64,
+        "utilization": 1.0,
+        "queue": 7,
+        "in_lot": 32,
+        "assigned_total": 105,
+        "rejected_total": 85,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 3.255,
+        "w3": 1.6
+      },
+      {
+        "step": 65,
+        "utilization": 1.0,
+        "queue": 5,
+        "in_lot": 32,
+        "assigned_total": 107,
+        "rejected_total": 86,
+        "congestion": 0.938,
+        "is_peak": 0,
+        "w2": 3.225,
+        "w3": 1.6
+      },
+      {
+        "step": 66,
+        "utilization": 1.0,
+        "queue": 4,
+        "in_lot": 32,
+        "assigned_total": 107,
+        "rejected_total": 89,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 3.195,
+        "w3": 1.6
+      },
+      {
+        "step": 67,
+        "utilization": 1.0,
+        "queue": 6,
+        "in_lot": 32,
+        "assigned_total": 108,
+        "rejected_total": 91,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.165,
+        "w3": 1.6
+      },
+      {
+        "step": 68,
+        "utilization": 1.0,
+        "queue": 7,
+        "in_lot": 32,
+        "assigned_total": 108,
+        "rejected_total": 94,
+        "congestion": 1.0,
+        "is_peak": 0,
+        "w2": 3.135,
+        "w3": 1.6
+      },
+      {
+        "step": 69,
+        "utilization": 1.0,
+        "queue": 7,
+        "in_lot": 32,
+        "assigned_total": 109,
+        "rejected_total": 96,
+        "congestion": 0.969,
+        "is_peak": 0,
+        "w2": 3.105,
+        "w3": 1.6
+      },
+      {
+        "step": 70,
+        "utilization": 1.0,
+        "queue": 8,
+        "in_lot": 32,
+        "assigned_total": 110,
+        "rejected_total": 98,
+        "congestion": 1.269,
+        "is_peak": 1,
+        "w2": 3.075,
+        "w3": 1.6
+      },
+      {
+        "step": 71,
+        "utilization": 0.938,
+        "queue": 9,
+        "in_lot": 30,
+        "assigned_total": 113,
+        "rejected_total": 98,
+        "congestion": 1.144,
+        "is_peak": 1,
+        "w2": 3.045,
+        "w3": 1.6
+      },
+      {
+        "step": 72,
+        "utilization": 1.0,
+        "queue": 6,
+        "in_lot": 32,
+        "assigned_total": 116,
+        "rejected_total": 98,
+        "congestion": 1.206,
+        "is_peak": 1,
+        "w2": 3.015,
+        "w3": 1.6
+      },
+      {
+        "step": 73,
+        "utilization": 1.0,
+        "queue": 3,
+        "in_lot": 32,
+        "assigned_total": 118,
+        "rejected_total": 99,
+        "congestion": 1.238,
+        "is_peak": 1,
+        "w2": 2.985,
+        "w3": 1.6
+      },
+      {
+        "step": 74,
+        "utilization": 0.969,
+        "queue": 0,
+        "in_lot": 31,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 1.206,
+        "is_peak": 1,
+        "w2": 2.955,
+        "w3": 1.6
+      },
+      {
+        "step": 75,
+        "utilization": 0.812,
+        "queue": 0,
+        "in_lot": 26,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 1.113,
+        "is_peak": 1,
+        "w2": 2.925,
+        "w3": 1.6
+      },
+      {
+        "step": 76,
+        "utilization": 0.812,
+        "queue": 0,
+        "in_lot": 26,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 1.113,
+        "is_peak": 1,
+        "w2": 2.895,
+        "w3": 1.6
+      },
+      {
+        "step": 77,
+        "utilization": 0.75,
+        "queue": 0,
+        "in_lot": 24,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 1.05,
+        "is_peak": 1,
+        "w2": 2.865,
+        "w3": 1.6
+      },
+      {
+        "step": 78,
+        "utilization": 0.75,
+        "queue": 0,
+        "in_lot": 24,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 1.05,
+        "is_peak": 1,
+        "w2": 2.835,
+        "w3": 1.6
+      },
+      {
+        "step": 79,
+        "utilization": 0.75,
+        "queue": 0,
+        "in_lot": 24,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 1.05,
+        "is_peak": 1,
+        "w2": 2.805,
+        "w3": 1.6
+      },
+      {
+        "step": 80,
+        "utilization": 0.719,
+        "queue": 0,
+        "in_lot": 23,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 1.019,
+        "is_peak": 1,
+        "w2": 2.775,
+        "w3": 1.6
+      },
+      {
+        "step": 81,
+        "utilization": 0.656,
+        "queue": 0,
+        "in_lot": 21,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.956,
+        "is_peak": 1,
+        "w2": 2.745,
+        "w3": 1.6
+      },
+      {
+        "step": 82,
+        "utilization": 0.562,
+        "queue": 0,
+        "in_lot": 18,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.863,
+        "is_peak": 1,
+        "w2": 2.715,
+        "w3": 1.6
+      },
+      {
+        "step": 83,
+        "utilization": 0.5,
+        "queue": 0,
+        "in_lot": 16,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.8,
+        "is_peak": 1,
+        "w2": 2.685,
+        "w3": 1.6
+      },
+      {
+        "step": 84,
+        "utilization": 0.469,
+        "queue": 0,
+        "in_lot": 15,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.769,
+        "is_peak": 1,
+        "w2": 2.655,
+        "w3": 1.6
+      },
+      {
+        "step": 85,
+        "utilization": 0.406,
+        "queue": 0,
+        "in_lot": 13,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.706,
+        "is_peak": 1,
+        "w2": 2.625,
+        "w3": 1.6
+      },
+      {
+        "step": 86,
+        "utilization": 0.406,
+        "queue": 0,
+        "in_lot": 13,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.706,
+        "is_peak": 1,
+        "w2": 2.595,
+        "w3": 1.6
+      },
+      {
+        "step": 87,
+        "utilization": 0.312,
+        "queue": 0,
+        "in_lot": 10,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.613,
+        "is_peak": 1,
+        "w2": 2.565,
+        "w3": 1.6
+      },
+      {
+        "step": 88,
+        "utilization": 0.25,
+        "queue": 0,
+        "in_lot": 8,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.55,
+        "is_peak": 1,
+        "w2": 2.535,
+        "w3": 1.6
+      },
+      {
+        "step": 89,
+        "utilization": 0.219,
+        "queue": 0,
+        "in_lot": 7,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.519,
+        "is_peak": 1,
+        "w2": 2.505,
+        "w3": 1.6
+      },
+      {
+        "step": 90,
+        "utilization": 0.188,
+        "queue": 0,
+        "in_lot": 6,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.188,
+        "is_peak": 0,
+        "w2": 2.475,
+        "w3": 1.6
+      },
+      {
+        "step": 91,
+        "utilization": 0.188,
+        "queue": 0,
+        "in_lot": 6,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.188,
+        "is_peak": 0,
+        "w2": 2.445,
+        "w3": 1.6
+      },
+      {
+        "step": 92,
+        "utilization": 0.156,
+        "queue": 0,
+        "in_lot": 5,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.156,
+        "is_peak": 0,
+        "w2": 2.415,
+        "w3": 1.6
+      },
+      {
+        "step": 93,
+        "utilization": 0.156,
+        "queue": 0,
+        "in_lot": 5,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.156,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 94,
+        "utilization": 0.156,
+        "queue": 0,
+        "in_lot": 5,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.156,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 95,
+        "utilization": 0.156,
+        "queue": 0,
+        "in_lot": 5,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.156,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 96,
+        "utilization": 0.125,
+        "queue": 0,
+        "in_lot": 4,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.125,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 97,
+        "utilization": 0.094,
+        "queue": 0,
+        "in_lot": 3,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.094,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 98,
+        "utilization": 0.031,
+        "queue": 0,
+        "in_lot": 1,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.031,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 99,
+        "utilization": 0.031,
+        "queue": 0,
+        "in_lot": 1,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.031,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 100,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 101,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 102,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 103,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 104,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 105,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 106,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 107,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 108,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 109,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 110,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 111,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 112,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 113,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 114,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 115,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 116,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 117,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 118,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 119,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 120,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 121,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 122,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 123,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 124,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 125,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 126,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 127,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 128,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 129,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 130,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 131,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 132,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 133,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 134,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 135,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 136,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 137,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 138,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 139,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 140,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 141,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 142,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 143,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 144,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 145,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 146,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 147,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 148,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      },
+      {
+        "step": 149,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "assigned_total": 120,
+        "rejected_total": 100,
+        "congestion": 0.0,
+        "is_peak": 0,
+        "w2": 2.4,
+        "w3": 1.6
+      }
+    ]
+  },
+  "fcfs": {
+    "system": "FCFS",
+    "total": 220,
+    "assigned_count": 139,
+    "rejected_count": 81,
+    "avg_wait": 9.09,
+    "max_wait": 13,
+    "jain_fairness": 0.7817,
+    "rejection_rate": 0.3682,
+    "utilization": 0.0,
+    "peak_queue": 26,
+    "type_avg_wait": {
+      "EMERGENCY": 8.29,
+      "VIP": 9.3,
+      "NORMAL": 9.1
+    },
+    "type_reject_rate": {
+      "EMERGENCY": 0.5625,
+      "VIP": 0.3077,
+      "NORMAL": 0.3636
+    },
+    "step_metrics": [
+      {
+        "step": 0,
+        "utilization": 0.062,
+        "queue": 0,
+        "in_lot": 2,
+        "is_peak": 0
+      },
+      {
+        "step": 1,
+        "utilization": 0.125,
+        "queue": 1,
+        "in_lot": 4,
+        "is_peak": 0
+      },
+      {
+        "step": 2,
+        "utilization": 0.188,
+        "queue": 0,
+        "in_lot": 6,
+        "is_peak": 0
+      },
+      {
+        "step": 3,
+        "utilization": 0.25,
+        "queue": 1,
+        "in_lot": 8,
+        "is_peak": 0
+      },
+      {
+        "step": 4,
+        "utilization": 0.312,
+        "queue": 2,
+        "in_lot": 10,
+        "is_peak": 0
+      },
+      {
+        "step": 5,
+        "utilization": 0.375,
+        "queue": 3,
+        "in_lot": 12,
+        "is_peak": 0
+      },
+      {
+        "step": 6,
+        "utilization": 0.438,
+        "queue": 4,
+        "in_lot": 14,
+        "is_peak": 0
+      },
+      {
+        "step": 7,
+        "utilization": 0.5,
+        "queue": 4,
+        "in_lot": 16,
+        "is_peak": 0
+      },
+      {
+        "step": 8,
+        "utilization": 0.562,
+        "queue": 6,
+        "in_lot": 18,
+        "is_peak": 0
+      },
+      {
+        "step": 9,
+        "utilization": 0.625,
+        "queue": 5,
+        "in_lot": 20,
+        "is_peak": 0
+      },
+      {
+        "step": 10,
+        "utilization": 0.656,
+        "queue": 6,
+        "in_lot": 21,
+        "is_peak": 0
+      },
+      {
+        "step": 11,
+        "utilization": 0.719,
+        "queue": 7,
+        "in_lot": 23,
+        "is_peak": 0
+      },
+      {
+        "step": 12,
+        "utilization": 0.781,
+        "queue": 8,
+        "in_lot": 25,
+        "is_peak": 0
+      },
+      {
+        "step": 13,
+        "utilization": 0.75,
+        "queue": 9,
+        "in_lot": 24,
+        "is_peak": 0
+      },
+      {
+        "step": 14,
+        "utilization": 0.781,
+        "queue": 10,
+        "in_lot": 25,
+        "is_peak": 0
+      },
+      {
+        "step": 15,
+        "utilization": 0.812,
+        "queue": 11,
+        "in_lot": 26,
+        "is_peak": 0
+      },
+      {
+        "step": 16,
+        "utilization": 0.844,
+        "queue": 13,
+        "in_lot": 27,
+        "is_peak": 0
+      },
+      {
+        "step": 17,
+        "utilization": 0.906,
+        "queue": 11,
+        "in_lot": 29,
+        "is_peak": 0
+      },
+      {
+        "step": 18,
+        "utilization": 0.938,
+        "queue": 12,
+        "in_lot": 30,
+        "is_peak": 0
+      },
+      {
+        "step": 19,
+        "utilization": 1.0,
+        "queue": 13,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 20,
+        "utilization": 1.0,
+        "queue": 16,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 21,
+        "utilization": 1.0,
+        "queue": 19,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 22,
+        "utilization": 1.0,
+        "queue": 22,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 23,
+        "utilization": 1.0,
+        "queue": 25,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 24,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 25,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 26,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 27,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 1
+      },
+      {
+        "step": 28,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 1
+      },
+      {
+        "step": 29,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 30,
+        "utilization": 1.0,
+        "queue": 25,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 31,
+        "utilization": 1.0,
+        "queue": 25,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 32,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 33,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 34,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 35,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 36,
+        "utilization": 0.969,
+        "queue": 25,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 37,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 38,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 39,
+        "utilization": 1.0,
+        "queue": 25,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 40,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 41,
+        "utilization": 0.938,
+        "queue": 26,
+        "in_lot": 30,
+        "is_peak": 0
+      },
+      {
+        "step": 42,
+        "utilization": 0.906,
+        "queue": 26,
+        "in_lot": 29,
+        "is_peak": 0
+      },
+      {
+        "step": 43,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 44,
+        "utilization": 1.0,
+        "queue": 25,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 45,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 46,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 47,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 48,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 49,
+        "utilization": 1.0,
+        "queue": 25,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 50,
+        "utilization": 1.0,
+        "queue": 23,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 51,
+        "utilization": 0.969,
+        "queue": 24,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 52,
+        "utilization": 0.938,
+        "queue": 26,
+        "in_lot": 30,
+        "is_peak": 0
+      },
+      {
+        "step": 53,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 54,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 55,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 56,
+        "utilization": 0.969,
+        "queue": 24,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 57,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 58,
+        "utilization": 1.0,
+        "queue": 24,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 59,
+        "utilization": 1.0,
+        "queue": 24,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 60,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 61,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 62,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 63,
+        "utilization": 0.938,
+        "queue": 24,
+        "in_lot": 30,
+        "is_peak": 0
+      },
+      {
+        "step": 64,
+        "utilization": 1.0,
+        "queue": 25,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 65,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 66,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 67,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 68,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 0
+      },
+      {
+        "step": 69,
+        "utilization": 1.0,
+        "queue": 26,
+        "in_lot": 32,
+        "is_peak": 0
+      },
+      {
+        "step": 70,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 1
+      },
+      {
+        "step": 71,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 1
+      },
+      {
+        "step": 72,
+        "utilization": 0.969,
+        "queue": 26,
+        "in_lot": 31,
+        "is_peak": 1
+      },
+      {
+        "step": 73,
+        "utilization": 1.0,
+        "queue": 24,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 74,
+        "utilization": 1.0,
+        "queue": 22,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 75,
+        "utilization": 1.0,
+        "queue": 20,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 76,
+        "utilization": 1.0,
+        "queue": 18,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 77,
+        "utilization": 1.0,
+        "queue": 16,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 78,
+        "utilization": 1.0,
+        "queue": 14,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 79,
+        "utilization": 0.938,
+        "queue": 12,
+        "in_lot": 30,
+        "is_peak": 1
+      },
+      {
+        "step": 80,
+        "utilization": 0.938,
+        "queue": 10,
+        "in_lot": 30,
+        "is_peak": 1
+      },
+      {
+        "step": 81,
+        "utilization": 1.0,
+        "queue": 8,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 82,
+        "utilization": 1.0,
+        "queue": 6,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 83,
+        "utilization": 0.969,
+        "queue": 4,
+        "in_lot": 31,
+        "is_peak": 1
+      },
+      {
+        "step": 84,
+        "utilization": 0.969,
+        "queue": 2,
+        "in_lot": 31,
+        "is_peak": 1
+      },
+      {
+        "step": 85,
+        "utilization": 1.0,
+        "queue": 0,
+        "in_lot": 32,
+        "is_peak": 1
+      },
+      {
+        "step": 86,
+        "utilization": 0.969,
+        "queue": 0,
+        "in_lot": 31,
+        "is_peak": 1
+      },
+      {
+        "step": 87,
+        "utilization": 0.906,
+        "queue": 0,
+        "in_lot": 29,
+        "is_peak": 1
+      },
+      {
+        "step": 88,
+        "utilization": 0.812,
+        "queue": 0,
+        "in_lot": 26,
+        "is_peak": 1
+      },
+      {
+        "step": 89,
+        "utilization": 0.812,
+        "queue": 0,
+        "in_lot": 26,
+        "is_peak": 1
+      },
+      {
+        "step": 90,
+        "utilization": 0.75,
+        "queue": 0,
+        "in_lot": 24,
+        "is_peak": 0
+      },
+      {
+        "step": 91,
+        "utilization": 0.656,
+        "queue": 0,
+        "in_lot": 21,
+        "is_peak": 0
+      },
+      {
+        "step": 92,
+        "utilization": 0.656,
+        "queue": 0,
+        "in_lot": 21,
+        "is_peak": 0
+      },
+      {
+        "step": 93,
+        "utilization": 0.656,
+        "queue": 0,
+        "in_lot": 21,
+        "is_peak": 0
+      },
+      {
+        "step": 94,
+        "utilization": 0.594,
+        "queue": 0,
+        "in_lot": 19,
+        "is_peak": 0
+      },
+      {
+        "step": 95,
+        "utilization": 0.5,
+        "queue": 0,
+        "in_lot": 16,
+        "is_peak": 0
+      },
+      {
+        "step": 96,
+        "utilization": 0.5,
+        "queue": 0,
+        "in_lot": 16,
+        "is_peak": 0
+      },
+      {
+        "step": 97,
+        "utilization": 0.438,
+        "queue": 0,
+        "in_lot": 14,
+        "is_peak": 0
+      },
+      {
+        "step": 98,
+        "utilization": 0.375,
+        "queue": 0,
+        "in_lot": 12,
+        "is_peak": 0
+      },
+      {
+        "step": 99,
+        "utilization": 0.344,
+        "queue": 0,
+        "in_lot": 11,
+        "is_peak": 0
+      },
+      {
+        "step": 100,
+        "utilization": 0.312,
+        "queue": 0,
+        "in_lot": 10,
+        "is_peak": 0
+      },
+      {
+        "step": 101,
+        "utilization": 0.281,
+        "queue": 0,
+        "in_lot": 9,
+        "is_peak": 0
+      },
+      {
+        "step": 102,
+        "utilization": 0.25,
+        "queue": 0,
+        "in_lot": 8,
+        "is_peak": 0
+      },
+      {
+        "step": 103,
+        "utilization": 0.25,
+        "queue": 0,
+        "in_lot": 8,
+        "is_peak": 0
+      },
+      {
+        "step": 104,
+        "utilization": 0.188,
+        "queue": 0,
+        "in_lot": 6,
+        "is_peak": 0
+      },
+      {
+        "step": 105,
+        "utilization": 0.188,
+        "queue": 0,
+        "in_lot": 6,
+        "is_peak": 0
+      },
+      {
+        "step": 106,
+        "utilization": 0.188,
+        "queue": 0,
+        "in_lot": 6,
+        "is_peak": 0
+      },
+      {
+        "step": 107,
+        "utilization": 0.156,
+        "queue": 0,
+        "in_lot": 5,
+        "is_peak": 0
+      },
+      {
+        "step": 108,
+        "utilization": 0.156,
+        "queue": 0,
+        "in_lot": 5,
+        "is_peak": 0
+      },
+      {
+        "step": 109,
+        "utilization": 0.094,
+        "queue": 0,
+        "in_lot": 3,
+        "is_peak": 0
+      },
+      {
+        "step": 110,
+        "utilization": 0.094,
+        "queue": 0,
+        "in_lot": 3,
+        "is_peak": 0
+      },
+      {
+        "step": 111,
+        "utilization": 0.094,
+        "queue": 0,
+        "in_lot": 3,
+        "is_peak": 0
+      },
+      {
+        "step": 112,
+        "utilization": 0.094,
+        "queue": 0,
+        "in_lot": 3,
+        "is_peak": 0
+      },
+      {
+        "step": 113,
+        "utilization": 0.094,
+        "queue": 0,
+        "in_lot": 3,
+        "is_peak": 0
+      },
+      {
+        "step": 114,
+        "utilization": 0.094,
+        "queue": 0,
+        "in_lot": 3,
+        "is_peak": 0
+      },
+      {
+        "step": 115,
+        "utilization": 0.062,
+        "queue": 0,
+        "in_lot": 2,
+        "is_peak": 0
+      },
+      {
+        "step": 116,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 117,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 118,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 119,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 120,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 121,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 122,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 123,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 124,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 125,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 126,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 127,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 128,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 129,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 130,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 131,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 132,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 133,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 134,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 135,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 136,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 137,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 138,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 139,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 140,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 141,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 142,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 143,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 144,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 145,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 146,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 147,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 148,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      },
+      {
+        "step": 149,
+        "utilization": 0.0,
+        "queue": 0,
+        "in_lot": 0,
+        "is_peak": 0
+      }
+    ]
+  },
+  "per_type_comparison": {
+    "EMERGENCY": {
+      "proposed_avg_wait": 0.0,
+      "fcfs_avg_wait": 8.29,
+      "proposed_reject_rate": 0.3333,
+      "fcfs_reject_rate": 0.5625
+    },
+    "VIP": {
+      "proposed_avg_wait": 0.71,
+      "fcfs_avg_wait": 9.3,
+      "proposed_reject_rate": 0.5405,
+      "fcfs_reject_rate": 0.3077
+    },
+    "NORMAL": {
+      "proposed_avg_wait": 2.52,
+      "fcfs_avg_wait": 9.1,
+      "proposed_reject_rate": 0.4444,
+      "fcfs_reject_rate": 0.3636
+    }
+  }
+}
