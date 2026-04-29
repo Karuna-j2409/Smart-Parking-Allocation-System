@@ -1,48 +1,44 @@
-# 🚗 Smart Parking Allocation System
+# 🚗 Adaptive Hybrid Smart Parking System
 
-A **DAA (Design and Analysis of Algorithms)** project prototype demonstrating **Priority-Based Smart Parking Slot Allocation** using a Max-Heap Priority Queue.
+A realistic, interactive prototype demonstrating an intelligent parking allocation system. The system uses a **Python FastAPI backend** for simulation logic and a **React/Vite frontend** for real-time visualization.
 
 ## 🎯 Concepts Demonstrated
 
 | Concept | Implementation |
 |---|---|
-| **Priority Queue (Max-Heap)** | Vehicles sorted by `P = 5×type + 3×wait + 2×reservation` |
-| **Fairness — Aging** | Waiting vehicles get priority boost every step — no starvation |
-| **Efficiency — Greedy** | Nearest free slot assigned via Euclidean distance from entrance |
-| **Dynamic Update** | Heap re-heapifies every step — live reordering |
+| **Priority Queue (Max-Heap)** | Vehicles sorted by adaptive formula. Emergencies stay at the top. |
+| **Fairness — Aging** | Waiting vehicles get priority boosts based on wait time and congestion to prevent starvation. |
+| **Emergency Preemption** | If the lot is full and an emergency vehicle waits too long, it preempts (evicts) the lowest priority normal vehicle. |
+| **Adaptive Allocation** | Simulates entry gate bottlenecks (processing limit) to create realistic queues. |
+| **Efficiency — Greedy** | Nearest free slot assigned via Euclidean distance. Large vehicles find 2 adjacent slots. |
 
 ## 🚀 Run Locally
 
+### 1. Start Backend (Simulation Engine)
 ```bash
-pip install streamlit pandas matplotlib
-python -m streamlit run app.py
+cd backend
+pip install -r requirements.txt
+python -m uvicorn main:app --port 8000
 ```
 
-Then open **http://localhost:8501** in your browser.
-
-## 📁 Files
-
-| File | Description |
-|---|---|
-| `app.py` | Streamlit prototype UI + simulation logic |
-| `smart_parking_v3.py` | Full advanced simulation (Dijkstra, adaptive weights, multi-entrance) |
-| `parking_graphs_v3.png` | Output graphs from full simulation |
-| `simulation_log.json` | Full simulation event log |
-| `vehicle_results.csv` | Per-vehicle allocation results |
-| `step_metrics.csv` | Per-step simulation metrics |
-
-## 🧠 Priority Formula
-
+### 2. Start Frontend (Web Dashboard)
+```bash
+cd frontend
+npm install
+npm run dev
 ```
-Priority = 5 × type_score + 3 × waiting_time + 2 × reservation
-```
+Then open **http://localhost:5173** in your browser.
 
-- **Emergency** → type_score = 3  
-- **VIP** → type_score = 2  
-- **Normal** → type_score = 1  
+## 📁 Directory Structure
 
-## 📊 Demo
+- `/backend`: Core Python simulation logic (`simulation.py`) and FastAPI WebSocket server (`main.py`).
+- `/frontend`: React dashboard built with Vite, vanilla CSS, and real-time visualization components.
+- `/results`: Automatically generated simulation logs (`simulation_logs.csv`) and statistics (`summary_stats.json`) after stopping the simulation.
+- `/data`: Future use for custom datasets.
 
-- Click **▶️ Run 1 Step** to step through allocation one vehicle at a time  
-- Click **⏩ Run All** to run the complete simulation  
-- Use the sidebar to change vehicle count and reset
+## 📊 Interaction
+
+- Click **▶ Start** to run the simulation dynamically.
+- Click **⏸ Stop** to halt and export results to the `/results` folder.
+- Click **⏭ Step** to advance the simulation frame-by-frame.
+- Use **🔄 Reset** to clear the grid and logs.

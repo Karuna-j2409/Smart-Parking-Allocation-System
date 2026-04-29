@@ -1,0 +1,11 @@
+{
+    "arrived": 81,
+    "allocated": 81,
+    "rejected": 0,
+    "preempted": 0,
+    "total_wait_time": 0,
+    "avg_wait_time": 0.0,
+    "utilization": 0.53125,
+    "queue_length": 0,
+    "congestion_factor": 1.46875
+}

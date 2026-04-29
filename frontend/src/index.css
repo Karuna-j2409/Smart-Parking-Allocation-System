@@ -1,0 +1,237 @@
+:root {
+  --bg-color: #0f1117;
+  --bg-card: #1e2130;
+  --bg-card-hover: #252a3d;
+  --text-primary: #ccd6f6;
+  --text-secondary: #8892b0;
+  --accent-color: #a78bfa;
+  --border-color: #2e3455;
+  
+  --color-free: #4ade80;
+  --color-occupied: #ff6b6b;
+  --color-reserved: #ffd93d;
+  --color-emergency: #60a5fa;
+  
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.header-controls button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.header-controls button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Grid Styles */
+.parking-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.slot {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid var(--bg-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.slot.free {
+  background-color: rgba(74, 222, 128, 0.2);
+  border-color: var(--color-free);
+  color: var(--color-free);
+}
+
+.slot.occupied {
+  background-color: rgba(255, 107, 107, 0.2);
+  border-color: var(--color-occupied);
+  color: var(--color-occupied);
+}
+
+.slot.reserved {
+  background-color: rgba(255, 217, 61, 0.1);
+  border-color: var(--color-reserved);
+  border-style: dashed;
+}
+
+.slot.emergency {
+  background-color: rgba(96, 165, 250, 0.3);
+  border-color: var(--color-emergency);
+  color: var(--color-emergency);
+  animation: pulse 1.5s infinite;
+}
+
+.slot.large-vehicle {
+  /* It spans visually by removing border between adjacent cells? Handled via React logic typically */
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(96, 165, 250, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(96, 165, 250, 0); }
+}
+
+@keyframes preempt-flash {
+  0% { background-color: #ff0000; transform: scale(1.1); }
+  100% { background-color: rgba(255, 107, 107, 0.2); transform: scale(1); }
+}
+
+.slot.preempted-animation {
+  animation: preempt-flash 0.5s ease-out;
+}
+
+/* Metrics Dashboard */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.metric-item {
+  background: var(--bg-card-hover);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.metric-item .value {
+  font-size: 2rem;
+  color: var(--accent-color);
+  font-weight: 700;
+  display: block;
+}
+
+.metric-item .label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Queue List */
+.queue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.queue-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.2s;
+}
+
+.queue-item:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.queue-item .v-type {
+  font-weight: bold;
+}
+
+.queue-item .v-type.Emergency { color: var(--color-emergency); }
+.queue-item .v-type.VIP { color: var(--color-reserved); }
+.queue-item .v-type.Normal { color: var(--color-free); }
+
+/* Logs */
+.log-list {
+  max-height: 400px;
+  overflow-y: auto;
+  font-size: 0.85rem;
+  padding-right: 10px;
+}
+
+.log-entry {
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 3px solid transparent;
+}
+
+.log-entry.normal { border-left-color: var(--color-free); }
+.log-entry.preempt { border-left-color: var(--color-emergency); background: rgba(96, 165, 250, 0.1); }
+.log-entry.reject { border-left-color: var(--color-occupied); }
+
+.log-entry span {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-secondary);
+}
+
+.log-entry .vehicle-info {
+  font-weight: bold;
+  color: white;
+}

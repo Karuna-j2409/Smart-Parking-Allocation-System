@@ -1,0 +1,51 @@
+step,status,vehicle,type,priority,slot,distance,waited,action_type
+55,Allocated,#81,VIP,100.0,"(2,2)",2.8,0,normal
+55,Allocated,#80,VIP,110.0,"(2,1)",2.2,0,normal
+54,Allocated,#79,Normal,50.0,"(1,0)",1.0,0,normal
+53,Allocated,#78,VIP,110.0,"(1,2)",2.2,0,normal
+52,Allocated,#77,Normal,50.0,"(3,0),(3,1)",3.0 (L),0,normal
+52,Allocated,#76,Normal,50.0,"(0,2)",2.0,0,normal
+52,Allocated,#75,Normal,50.0,"(0,1)",1.0,0,normal
+48,Allocated,#74,Normal,50.0,"(0,5),(0,6)",5.0 (L),0,normal
+48,Allocated,#73,Normal,50.0,"(2,0)",2.0,0,normal
+47,Allocated,#72,Normal,50.0,"(2,1)",2.2,0,normal
+47,Allocated,#71,Normal,50.0,"(1,1)",1.4,0,normal
+47,Allocated,#70,VIP,100.0,"(0,0)",0.0,0,normal
+46,Allocated,#68,Normal,50.0,"(3,4),(3,5)",5.0 (L),0,normal
+46,Allocated,#69,VIP,110.0,"(1,2)",2.2,0,normal
+44,Allocated,#67,Normal,50.0,"(1,0)",1.0,0,normal
+43,Allocated,#66,Normal,50.0,"(2,4)",4.5,0,normal
+43,Allocated,#65,Normal,50.0,"(3,3)",4.2,0,normal
+43,Allocated,#64,VIP,100.0,"(1,4),(1,5)",4.1 (L),0,normal
+41,Allocated,#63,Normal,50.0,"(0,4)",4.0,0,normal
+41,Allocated,#62,Normal,50.0,"(0,1)",1.0,0,normal
+39,Allocated,#61,Normal,50.0,"(3,2)",3.6,0,normal
+38,Allocated,#59,Normal,50.0,"(1,3)",3.2,0,normal
+38,Allocated,#58,VIP,100.0,"(0,3)",3.0,0,normal
+38,Allocated,#60,VIP,110.0,"(0,0)",0.0,0,normal
+37,Allocated,#57,Normal,50.0,"(2,0)",2.0,0,normal
+37,Allocated,#56,Normal,50.0,"(1,0)",1.0,0,normal
+36,Allocated,#55,Normal,50.0,"(2,2),(2,3)",2.8 (L),0,normal
+36,Allocated,#54,Normal,50.0,"(3,0),(3,1)",3.0 (L),0,normal
+36,Allocated,#53,VIP,100.0,"(0,2)",2.0,0,normal
+34,Allocated,#52,VIP,100.0,"(2,1)",2.2,0,normal
+33,Allocated,#51,Normal,50.0,"(1,2)",2.2,0,normal
+33,Allocated,#50,Normal,50.0,"(0,0)",0.0,0,normal
+32,Allocated,#49,VIP,110.0,"(1,0),(1,1)",1.0 (L),0,normal
+29,Allocated,#48,Normal,50.0,"(1,5),(1,6)",5.1 (L),0,normal
+29,Allocated,#47,Normal,50.0,"(2,4)",4.5,0,normal
+29,Allocated,#46,VIP,100.0,"(1,4)",4.1,0,normal
+28,Allocated,#45,VIP,110.0,"(0,4)",4.0,0,normal
+28,Allocated,#44,Emergency,1150.0,"(3,3),(3,4)",4.2 (L),0,normal
+27,Allocated,#43,Normal,50.0,"(2,3)",3.6,0,normal
+27,Allocated,#42,Normal,50.0,"(1,3)",3.2,0,normal
+27,Allocated,#41,Normal,50.0,"(3,0)",3.0,0,normal
+26,Allocated,#39,Normal,50.0,"(2,0)",2.0,0,normal
+26,Allocated,#38,Normal,50.0,"(1,1)",1.4,0,normal
+26,Allocated,#40,VIP,110.0,"(0,1)",1.0,0,normal
+25,Allocated,#37,VIP,110.0,"(3,1),(3,2)",3.2 (L),0,normal
+24,Allocated,#36,Normal,50.0,"(0,0)",0.0,0,normal
+23,Allocated,#35,Normal,50.0,"(0,3)",3.0,0,normal
+22,Allocated,#34,Normal,50.0,"(2,2)",2.8,0,normal
+22,Allocated,#33,Normal,50.0,"(0,2)",2.0,0,normal
+21,Allocated,#32,Normal,50.0,"(1,2)",2.2,0,normal
